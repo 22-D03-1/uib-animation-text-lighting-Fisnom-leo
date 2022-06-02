@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 100%;
+                font-family: "Maven Pro", sans-serif;
+                color: white;
+                text-align: center;
+                background-color: black;
+            }
+            main {
+                width: 900px;
+                height: 300px;
+                display: grid;
+                grid-template-columns: repeat(6, 150px);
+                grid-template-rows: repeat(1, 150px);
+                position: relative;
+                font-size: 80px;
+            }
+            main .box1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: black;
+                grid-column: 1/1;
+                font-size: 80px;
+                animation-name: doctor;
+
+                /* animation-fill-mode: backwards; */
+
+                animation-direction: normal;
+                animation-delay: 1s;
+            }
+            main .box2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: black;
+                grid-column: 2/3;
+
+                font-size: 80px;
+                animation-name: doctor;
+
+                /* animation-fill-mode: backwards; */
+                
+                animation-direction: normal;
+                animation-delay: 1.2s;
+            }
+
+            main .box3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: black;
+                grid-column: 4/3;
+                font-size: 80px;
+                animation-name: doctor;
+                /* animation-fill-mode: backwards; */
+                animation-direction: normal;
+                animation-delay: 1.4s;
+            }
+
+            main .box4 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: black;
+                grid-column: 4/5;
+                font-size: 80px;
+                animation-name: doctor;
+
+                /* animation-fill-mode: backwards; */
+
+                animation-direction: normal;
+                animation-delay: 1.6s;
+            }
+            main .box5 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: black;
+                grid-column: 5/6;
+                font-size: 80px;
+                animation-name: doctor;
+
+                animation-direction: normal;
+                animation-delay: 1.8s;
+            }
+            main .box6 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: black;
+                grid-column: 6/7;
+                font-size: 80px;
+                animation-name: doctor;
+
+                
+                animation-direction: normal;
+                animation-delay: 2s;
+            }
+            main div {
+                animation-name: doctor;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes doctor {
+                0% {
+                    color: yellow;
+                }
+                50% {
+                    color: grey;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <body>
+            <main>
+                <div class="box1">d</div>
+                <div class="box2">o</div>
+                <div class="box3">c</div>
+                <div class="box4">t</div>
+                <div class="box5">o</div>
+                <div class="box6">r</div>
+            </main>
+        </body>
+    </body>
+</html>
